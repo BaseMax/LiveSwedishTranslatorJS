@@ -1,7 +1,6 @@
 /*
  * @name: Live Swedish translator (web, javascript)
  * @description: translate Swedish chars to normal english form
- * @repo: https://github.com/BaseMax/LiveSwedishTranslatorJS
  * @instructions:
 	Ä = EA
 	Ö = EO
@@ -54,14 +53,17 @@
 					// n+2: Starting position of match (0 = start)
 					// n+3: The subject string.
 					// (n = number of capture groups)
-					if (tag !== undefined) {
-						// We matched a tag. Replace with an empty string
-						return "";
-					}
+					// if (tag !== undefined) {
+					// 	// We matched a tag. Replace with an empty string
+					// 	return "";
+					// }
 					// Otherwise we matched a char. Replace with corresponding tag.
+					// console.log(match);
 					Object.keys(rules).forEach(key => {
 						// console.log(key, rules[key]);
-						if(char == key) {
+						// console.log("search "+match+"," + key);
+						if(match == key) {
+							console.log("find "+match+","+key+" is " + rules[key]);
 							return rules[key];
 						}
 					});
@@ -108,15 +110,16 @@
 			// å:oo
 			var regex="(";
 			Object.keys(rules).forEach(key => {
-				console.log(key, rules[key]);
-				regex+=key+"|";
-				// replace(document.body, new RegExp(key, "g"), rules[key]);
+				// console.log(key, rules[key]);
+				// regex+=key+"|";
+				replace(document.body, new RegExp(key, "g"), rules[key]);
 			});
-			regex=rtrim(regex, "|");
-			regex+=")";
-			console.log("regex is "+regex);
-			var re = new RegExp(regex, "g");
-			replaceAll(document.body, re);
+			// regex=rtrim(regex, "|");
+			// regex+=")";
+			// console.log("regex is "+regex);
+			// var re = new RegExp(regex, "g");
+			// replaceAll(document.body, re);
+
 			// replace(document.body, new RegExp("Ä", "g"), "EA");
 			// replace(document.body, new RegExp("Ö", "g"), "EO");
 			// replace(document.body, new RegExp("Å", "g"), "OO");
