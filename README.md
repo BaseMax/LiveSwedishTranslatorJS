@@ -15,13 +15,16 @@ First way, upload `translator.js` in your root and using:
 <script src="translator.js"></script>
 ```
 
-
 Second way, using github as Host of Javascript:
 
 ```html
 <!-- Live Swedish translator -->
 <script src="https://basemax.github.io/LiveSwedishTranslatorJS/translator.js"></script>
 ```
+
+### Demo
+
+https://basemax.github.io/LiveSwedishTranslatorJS/example/
 
 ### Instructions:
 
