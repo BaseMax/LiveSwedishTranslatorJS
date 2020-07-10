@@ -4,6 +4,8 @@
 
 Translate Swedish chars to normal english form.
 
+**Company:** Lin24.se
+ 
 ### Using
 
 First way, upload `translator.js` in your root and using:
