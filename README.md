@@ -20,7 +20,7 @@ Second way, using github as Host of Javascript:
 
 ```html
 <!-- Live Swedish translator -->
-<script src="https://raw.githubusercontent.com/BaseMax/LiveSwedishTranslatorJS/master/translator.js"></script>
+<script src="https://basemax.github.io/LiveSwedishTranslatorJS/translator.js"></script>
 ```
 
 ### Instructions:
