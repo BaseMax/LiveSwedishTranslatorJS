@@ -1,6 +1,6 @@
 # LiveSwedishTranslatorJS
 
-# # Live Swedish translator (web, javascript)
+## Live Swedish translator (web, javascript)
 
 Translate Swedish chars to normal english form.
 
